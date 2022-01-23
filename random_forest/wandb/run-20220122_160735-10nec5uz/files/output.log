@@ -1,0 +1,54 @@
+2022-01-22 16:07:41,091 Downloading and reading train artifact
+wandb: ERROR Attempted to fetch artifact without alias (e.g. "<artifact_name>:v3" or "<artifact_name>:latest")
+Traceback (most recent call last):
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 3077, in _load
+    response = self.client.execute(
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/old/retry.py", line 132, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/old/retry.py", line 96, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 181, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/requests/models.py", line 960, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 3089, in _load
+    raise ValueError(
+ValueError: Attempted to fetch artifact without alias (e.g. "<artifact_name>:v3" or "<artifact_name>:latest")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 263, in <module>
+    go(args)
+  File "run.py", line 33, in go
+    train_data_path = run.use_artifact(args.train_data).file()
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1957, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/lib/python3.8/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/home/jsmit24

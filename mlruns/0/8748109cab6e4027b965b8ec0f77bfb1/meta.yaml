@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/jerem/OneDrive/Desktop/udacity_devops/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/mlDevOps_sec2_ex14/mlruns/0/8748109cab6e4027b965b8ec0f77bfb1/artifacts
+end_time: 1642896648865
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 8748109cab6e4027b965b8ec0f77bfb1
+run_uuid: 8748109cab6e4027b965b8ec0f77bfb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1642896512693
+status: 3
+tags: []
+user_id: jsmit244

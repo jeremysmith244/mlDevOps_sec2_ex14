@@ -1,0 +1,31 @@
+{
+    "os": "Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.31",
+    "python": "3.9.9",
+    "heartbeatAt": "2022-01-22T23:59:57.748741",
+    "startedAt": "2022-01-22T23:59:53.550051",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        ".",
+        "--reference_artifact",
+        "exercise_14/processed_data:latest",
+        "--sample_artifact",
+        "processed_data:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/jeremysmith244/mlDevOps_sec2_ex14.git",
+        "commit": "e31afff626f7e9e6e62408ab76d33699dc7a75d8"
+    },
+    "email": "jeremysmith244@gmail.com",
+    "root": "/mnt/c/Users/jerem/OneDrive/Desktop/udacity_devops/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/mlDevOps_sec2_ex14",
+    "host": "LAPTOP-S0MPVJI3",
+    "username": "jsmit244",
+    "executable": "/home/jsmit244/anaconda3/envs/mlflow-7398531e5288219e428182dc4d6601ae57991d39/bin/python"
+}

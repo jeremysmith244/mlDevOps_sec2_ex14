@@ -1,0 +1,35 @@
+{
+    "os": "Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-23T00:10:10.763927",
+    "startedAt": "2022-01-23T00:10:06.307532",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "split_data_train.csv:latest",
+        "--model_config",
+        "/mnt/c/Users/jerem/OneDrive/Desktop/udacity_devops/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/mlDevOps_sec2_ex14/outputs/2022-01-22/16-08-36/random_forest_config.yml",
+        "--export_artifact",
+        "model_export",
+        "--random_seed",
+        "42",
+        "--val_size",
+        "0.3",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/jeremysmith244/mlDevOps_sec2_ex14.git",
+        "commit": "e31afff626f7e9e6e62408ab76d33699dc7a75d8"
+    },
+    "email": "jeremysmith244@gmail.com",
+    "root": "/mnt/c/Users/jerem/OneDrive/Desktop/udacity_devops/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/mlDevOps_sec2_ex14",
+    "host": "LAPTOP-S0MPVJI3",
+    "username": "jsmit244",
+    "executable": "/home/jsmit244/anaconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/bin/python"
+}

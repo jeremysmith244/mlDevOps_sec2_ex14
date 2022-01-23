@@ -1,0 +1,31 @@
+{
+    "os": "Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-01-22T23:47:33.301703",
+    "startedAt": "2022-01-22T23:47:29.441970",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true",
+        "--artifact_name",
+        "raw_data.parquet",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "Data as downloaded"
+    ],
+    "state": "running",
+    "program": "download_data.py",
+    "codePath": "download/download_data.py",
+    "git": {
+        "remote": "https://github.com/jeremysmith244/mlDevOps_sec2_ex14.git",
+        "commit": "e31afff626f7e9e6e62408ab76d33699dc7a75d8"
+    },
+    "email": "jeremysmith244@gmail.com",
+    "root": "/mnt/c/Users/jerem/OneDrive/Desktop/udacity_devops/nd0821-c2-build-model-workflow-exercises/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/mlDevOps_sec2_ex14",
+    "host": "LAPTOP-S0MPVJI3",
+    "username": "jsmit244",
+    "executable": "/home/jsmit244/anaconda3/envs/mlflow-4b67c93d2a95df2e00cbf3c9f644d2e3dada00e0/bin/python"
+}
